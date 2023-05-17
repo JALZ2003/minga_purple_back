@@ -6,7 +6,7 @@ let schema = new Schema({
     manga_id: { type: Types.ObjectId, ref: 'mangas', require: true },
     title: { type: String, require: true },
     cover_photo: { type: String, require: true },
-    pages: { types: Array, require: true },
+    pages: { type: Array, require: true },
     order: { type: Number, require: true }
 }, {
     timestamps: true
